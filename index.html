@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Clinton Nkpa — Electronic Engineering, Embedded Systems, Software, Systems and Security portfolio.">
+<title>Clinton Nkpa | Engineering Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top">CLINTON NKPA</a>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#security">Security</a>
+    <a href="#engineering">Engineering</a>
+    <a href="#software">Software</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="eyebrow">ELECTRONIC ENGINEERING • EMBEDDED • SYSTEMS • SECURITY</div>
+  <h1>Building systems across the boundary between <span>hardware and software.</span></h1>
+  <p class="lead">An engineering portfolio covering embedded control, aircraft communications, electronics, networking, cybersecurity, accelerated computing, telemetry and software.</p>
+  <div class="hero-actions">
+    <a class="button" href="#projects">Explore projects</a>
+    <a class="button ghost" href="#about">About me</a>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong>10+</strong><span>technical projects & systems</span></div>
+  <div><strong>6+</strong><span>engineering domains</span></div>
+  <div><strong>HW ↔ SW</strong><span>systems integration focus</span></div>
+  <div><strong>Linux</strong><span>development & security work</span></div>
+</section>
+
+<section id="projects" class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">SELECTED WORK</div><h2>Projects</h2></div>
+    <p>Case studies are organised around the engineering problem, architecture, implementation and validation rather than simply listing technologies.</p>
+  </div>
+
+  <div class="featured">
+    <article class="feature-card">
+      <div class="tag">01 / UAV • EMBEDDED • COMMS</div>
+      <h3>Dual-Prototype Cooperative Quadcopter & Aircraft Datalink</h3>
+      <p>Designed a dual-aircraft embedded prototype in which two closely matched quadcopters independently maintained flight stability while exchanging state, telemetry and mission/waypoint information through a bidirectional datalink.</p>
+      <div class="chips"><span>H743</span><span>Raspberry Pi</span><span>Telemetry</span><span>Flight Control</span><span>Linux</span><span>Fault Isolation</span></div>
+      <div class="case">
+        <b>Architecture</b>
+        <p>Separated deterministic flight-critical control from higher-level Linux networking and autonomy. The second aircraft provided an A/B validation and fault-isolation platform.</p>
+        <b>Engineering focus</b>
+        <p>Maintaining deterministic control while adding higher-level coordination, communications and shared mission state.</p>
+      </div>
+    </article>
+
+    <article class="feature-card">
+      <div class="tag">02 / NETWORK SECURITY • AUTOMATION</div>
+      <h3>Nmap Monitoring & Detection System</h3>
+      <p>Built a repeatable Linux-based monitoring pipeline using Nmap XML output, dated LAN baselines and ndiff semantic comparison, then extended it into failure-aware detection and automated alerting.</p>
+      <div class="chips"><span>Nmap</span><span>Wireshark</span><span>Bash</span><span>ndiff</span><span>cron</span><span>Postfix</span><span>SMTP/TLS</span></div>
+      <div class="case">
+        <b>Engineering problem</b>
+        <p>Distinguishing genuine network changes from missing baselines, failed scans and environmental observation failures.</p>
+        <b>Result</b>
+        <p>Failure-aware logging, route validation and authenticated SMTP alerting produced an automated monitoring workflow rather than a simple one-shot scanner.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <div class="tag">03 / PERFORMANCE ENGINEERING</div>
+      <h3>VR-Link Simulation Performance & VRAM Troubleshooting</h3>
+      <p>Profiled CPU/GPU utilisation, memory behaviour, synchronisation and thermal performance in multi-user real-time simulation environments.</p>
+      <ul><li>CUDA / CuPy / PyTorch workload optimisation</li><li>30–60 minute sessions with up to 8 concurrent users</li><li>Investigated VRAM memory-leak accumulation over time</li><li>Reduced virtual-memory pressure and performance bottlenecks</li></ul>
+    </article>
+
+    <article class="card">
+      <div class="tag">04 / CONTROL SYSTEMS</div>
+      <h3>Automated Reservoir System</h3>
+      <p>Built an Arduino-based closed-loop water-level monitoring and control system using ultrasonic sensing and PWM pump control.</p>
+      <ul><li>Arduino Uno + HC-SR05</li><li>MATLAB / Simulink modelling</li><li>PID tuning and experimental validation</li><li>Sensor placement and flow-disturbance constraints</li></ul>
+    </article>
+
+    <article class="card">
+      <div class="tag">05 / TELEMETRY • API</div>
+      <h3>Fast-F1 API</h3>
+      <p>Developed a Python/FastAPI telemetry and analytics platform for high-frequency Formula 1 data ingestion, processing and visualisation.</p>
+      <ul><li>Python / FastAPI</li><li>High-frequency data ingestion</li><li>Structured acquisition and processing</li><li>Matplotlib visualisation</li></ul>
+    </article>
+
+    <article class="card">
+      <div class="tag">06 / POWER ELECTRONICS</div>
+      <h3>Wireless Power Transfer Device</h3>
+      <p>Built and iteratively tested a prototype wireless power-transfer system for low-power electronics, addressing transfer-efficiency and component-stability limitations.</p>
+      <ul><li>Inductive wireless transfer</li><li>LEDs, diodes and small 5 V loads</li><li>Circuit construction and testing</li><li>Iterative fault finding</li></ul>
+    </article>
+
+    <article class="card">
+      <div class="tag">07 / MULTIDISCIPLINARY MODELLING</div>
+      <h3>Passive Energy Recovery System</h3>
+      <p>Simulated a passive energy-recovery concept using MATLAB, Verilog and SolidWorks to examine interactions between physical design, digital control logic and system-level energy behaviour.</p>
+      <ul><li>MATLAB modelling</li><li>Verilog representation</li><li>SolidWorks mechanical model</li><li>Cross-domain comparison</li></ul>
+    </article>
+
+    <article class="card">
+      <div class="tag">08 / WEB • DATA</div>
+      <h3>Full-Stack & Data Systems</h3>
+      <p>Built scalable applications, secure authentication workflows and data-driven systems across frontend, backend and API layers.</p>
+      <ul><li>Python / Java / C++ / C#</li><li>API integration</li><li>Authentication</li><li>Backend performance optimisation</li></ul>
+    </article>
+  </div>
+</section>
+
+<section id="security" class="section dark-section">
+  <div class="section-head">
+    <div><div class="eyebrow">SECURITY ENGINEERING</div><h2>Network security & defence</h2></div>
+    <p>The security work combines practical Linux tooling with network analysis and automation.</p>
+  </div>
+  <div class="security-flow">
+    <div><b>01</b><span>Reconnaissance</span><small>Nmap • TCP/UDP • service/version analysis</small></div>
+    <div><b>02</b><span>Observation</span><small>Wireshark/tshark • netcat • curl • SSDP/UPnP</small></div>
+    <div><b>03</b><span>Baselining</span><small>XML output • dated LAN baselines • ndiff</small></div>
+    <div><b>04</b><span>Detection</span><small>Bash • cron • route validation • failure classification</small></div>
+    <div><b>05</b><span>Alerting</span><small>Postfix • authenticated Gmail SMTP/TLS</small></div>
+  </div>
+  <div class="credentials">
+    <div class="eyebrow">SECURITY TRAINING</div>
+    <h3>Credentials & current development</h3>
+    <div class="credential-grid">
+      <div><b>CEH v12</b><span>EC-Council — completed</span></div>
+      <div><b>Network Defence Essentials</b><span>EC-Council / Coursera — completed</span></div>
+      <div><b>AWS Security – Specialty (SCS-C03)</b><span>In progress</span></div>
+      <div><b>CompTIA Security+</b><span>Planned</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="engineering" class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">ENGINEERING TOOLBOX</div><h2>Hardware, control & systems</h2></div>
+    <p>My projects span physical prototypes, digital logic, embedded interfaces, control systems and compute-intensive software.</p>
+  </div>
+  <div class="tool-grid">
+    <div><h3>Embedded & Digital</h3><p>C++ • Python • Verilog HDL • RTL concepts • synchronous digital design • FPGA fundamentals • real-time systems</p></div>
+    <div><h3>Interfaces</h3><p>UART • SPI • I2C • PCIe fundamentals • serial/parallel communication • synchronisation • latency/bandwidth trade-offs</p></div>
+    <div><h3>Control & Modelling</h3><p>MATLAB/Simulink • PID control • sensor integration • system modelling • physical prototyping</p></div>
+    <div><h3>Platforms & Compute</h3><p>H743-class flight controllers • Raspberry Pi • Arduino Uno • Linux • CUDA • CuPy • PyTorch • profiling</p></div>
+    <div><h3>Data & Telemetry</h3><p>FastAPI • NumPy • Matplotlib • API integration • high-frequency telemetry • performance analysis</p></div>
+    <div><h3>Security Systems</h3><p>Nmap • Wireshark/tshark • Bash • ndiff • cron • Postfix • SMTP/TLS • anomaly/change detection</p></div>
+  </div>
+</section>
+
+<section id="software" class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">SOFTWARE & SIMULATION</div><h2>Beyond embedded systems</h2></div>
+    <p>Software development has included full-stack applications, telemetry, simulation and game systems.</p>
+  </div>
+  <div class="software-list">
+    <div><span>01</span><div><h3>Game & simulation systems</h3><p>Unity and Unreal Engine development, real-time state management, pathfinding, decision trees and finite-state-machine logic.</p></div></div>
+    <div><span>02</span><div><h3>Application development</h3><p>Full-stack applications, authentication, API integration, backend optimisation and legacy-hardware considerations.</p></div></div>
+    <div><span>03</span><div><h3>Accelerated computing</h3><p>NVIDIA CUDA, CuPy and PyTorch used for workload separation, profiling, parallelisation and throughput optimisation.</p></div></div>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <div>
+    <div class="eyebrow">ABOUT</div>
+    <h2>Electronic engineer with a systems mindset.</h2>
+  </div>
+  <div>
+    <p>My work sits at the intersection of hardware, embedded software, communications, computation and security. I am particularly interested in systems where performance, timing, reliability and interfaces matter.</p>
+    <p>My engineering projects include aircraft/UAV communications, closed-loop control, electronics prototyping, HDL modelling, telemetry platforms and Linux-based network monitoring.</p>
+    <div class="contact">
+      <a href="mailto:Clintonnkpa@gmail.com">Clintonnkpa@gmail.com</a>
+      <span>•</span><span>Drogheda, Ireland</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>CLINTON NKPA</span>
+  <span>ENGINEERING PORTFOLIO</span>
+  <span>© 2026</span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
