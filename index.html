@@ -13,6 +13,7 @@
   <nav>
     <a href="#projects">Projects</a>
     <a href="#security">Security</a>
+    <a href="#aws-cloud-security">AWS Cloud Security</a>
     <a href="#engineering">Engineering</a>
     <a href="#software">Software</a>
     <a href="#about">About</a>
@@ -96,8 +97,7 @@
 
     <article class="card">
       <div class="tag">06 / TELEMETRY • API</div>
-      <h3>Fast-F1 API</h3>
-      <p>Developed a Python/FastAPI telemetry and analytics platform for high-frequency Formula 1 data ingestion, processing and visualisation.</p>
+      <h3>Fast-F1 API</h3>      <p>Developed a Python/FastAPI telemetry and analytics platform for high-frequency Formula 1 data ingestion, processing and visualisation.</p>
       <ul><li>Python / FastAPI</li><li>High-frequency data ingestion</li><li>Structured acquisition and processing</li><li>Matplotlib visualisation</li></ul>
     </article>
 
@@ -155,6 +155,55 @@
   </div>
 </section>
 
+<section id="aws-cloud-security" class="section dark-section">
+  <div class="section-head">
+    <div><div class="eyebrow">CLOUD SECURITY • AWS • TERRAFORM</div><h2>AWS Cloud Security Lab</h2></div>
+    <p>A hands-on, Terraform-managed AWS lab focused on network segmentation, workload identity, private systems management and evidence-led connectivity troubleshooting. This project is in progress; validation limits and planned follow-up work are documented openly.</p>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <div class="tag">01 / ARCHITECTURE</div>
+      <h3>Segmented VPC & workload access</h3>
+      <p>Built a VPC with separate client and private application subnets, route tables, security groups and dedicated EC2 instance roles.</p>
+      <ul>
+        <li>Terraform-managed AWS resources</li>
+        <li>Private application instance without a public IPv4 address</li>
+        <li>IMDSv2 required and encrypted EBS root volumes</li>
+        <li>Security-group controls for client-to-app and SSM endpoint traffic</li>
+      </ul>
+    </article>
+    <article class="card">
+      <div class="tag">02 / SECURE ADMINISTRATION</div>
+      <h3>Systems Manager Session Manager</h3>
+      <p>Configured SSM interface endpoints and dedicated instance profiles to administer workloads without opening inbound SSH for routine management.</p>
+      <ul>
+        <li>AmazonSSMManagedInstanceCore attached to workload roles</li>
+        <li>Private endpoint connectivity inspected using AWS CLI</li>
+        <li>Diagnosed a missing TCP 443 client-to-endpoint permission</li>
+        <li>Applied a targeted security-group correction and verified SSM recovery</li>
+      </ul>
+    </article>
+    <article class="card">
+      <div class="tag">03 / NETWORK VALIDATION</div>
+      <h3>Observed traffic tests</h3>
+      <p>Tested configured paths from an SSM session on the client instance and recorded observed outcomes rather than treating timeouts as definitive proof of a single cause.</p>
+      <ul>
+        <li>TCP 8080: HTTP 200 from the private app's temporary test server</li>
+        <li>TCP 22: connection timed out; app SG had no inbound TCP 22 rule</li>
+        <li>Public HTTPS from the private app: connection timed out under current routing and egress restrictions</li>
+        <li>Reachability Analyzer and VPC Flow Logs remain planned for corroboration</li>
+      </ul>
+    </article>
+  </div>
+  <div class="credentials">
+    <div class="eyebrow">IMPLEMENTATION & EVIDENCE</div>
+    <h3>Project artefacts</h3>
+    <p>The project README records the architecture, observed tests, limitations and next steps. Terraform configuration and sanitised evidence will be added after review.</p>
+    <p><a class="button ghost" href="https://github.com/Clinton-Nkpa/Engineering-Portfolio-/tree/main/projects/aws-cloud-security-lab" target="_blank" rel="noopener noreferrer">Open AWS lab documentation</a></p>
+    <div class="chips"><span>AWS</span><span>Terraform</span><span>VPC</span><span>EC2</span><span>IAM</span><span>SSM</span><span>Linux</span><span>Security Groups</span></div>
+  </div>
+</section>
+
 <section id="engineering" class="section">
   <div class="section-head">
     <div><div class="eyebrow">ENGINEERING TOOLBOX</div><h2>Hardware, control & systems</h2></div>
@@ -196,8 +245,7 @@
       <a href="mailto:Clintonnkpa@gmail.com">Clintonnkpa@gmail.com</a>
       <span>•</span><span>Drogheda, Ireland</span>
     </div>
-  </div>
-</section>
+  </div></section>
 </main>
 
 <footer>
